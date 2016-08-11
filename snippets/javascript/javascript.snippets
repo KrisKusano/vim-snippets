@@ -30,6 +30,11 @@ snippet (f
 	(function(${1}) {
 		${0}
 	}(${2}));
+# Minify safe iife
+snippet ;fe
+	;(function(${1}) {
+		${0}
+	}(${2}))
 # self-defining function
 snippet sdf
 	var ${1:function_name} = function (${2:argument}) {
@@ -254,9 +259,9 @@ snippet cl
 # console.debug
 snippet cd
 	console.debug(${0});
-# console.err
+# console.error
 snippet ce
-	console.err(${0});
+	console.error(${0});
 # console.trace
 snippet ct
 	console.trace(${0:label});
